@@ -20,6 +20,9 @@ import { AppComponent } from './app.component';
 // import the feature module here so you can add it to the imports array below
 import { CustomerDashboardModule } from './customer-dashboard/customer-dashboard.module';
 
+// https://angular.io/guide/providers
+// When you add a service provider to the providers array of the root module, it’s available throughout the app.
+import { UserService } from './user.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { CustomerDashboardModule } from './customer-dashboard/customer-dashboard
     // https://angular.io/guide/feature-modules
     CustomerDashboardModule // add the feature module here
   ],
-  providers: [],
+  providers: [
+    // https://angular.io/guide/providers
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

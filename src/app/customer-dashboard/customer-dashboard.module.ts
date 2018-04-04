@@ -19,6 +19,14 @@ import { CustomerDashboardComponent } from './customer-dashboard/customer-dashbo
   exports: [
     CustomerDashboardComponent
   ],
+  /* https://angular.io/guide/providers
+
+     Example of LIMITING PROVIDER SCOPE with components. . .
+     Generally, provide services the whole app needs in the root module and
+     scope services by providing them in lazy loaded modules.
+
+     providers: [UserService]
+  */
   declarations: [CustomerDashboardComponent]
 })
 export class CustomerDashboardModule { }
