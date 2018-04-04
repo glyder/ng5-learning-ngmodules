@@ -28,6 +28,7 @@ import { UserService } from './user.service';
   declarations: [
     AppComponent
   ],
+  // composing NgModules together
   imports: [                /* add modules here so Angular knows to use them */
     BrowserModule,
     AppRoutingModule,       // created project with routing adds this here.
@@ -37,6 +38,10 @@ import { UserService } from './user.service';
 
     // https://angular.io/guide/feature-modules
     CustomerDashboardModule // add the feature module here
+  ],
+  // making NgModules available to other parts of the app
+  exports: [
+
   ],
   providers: [
     // https://angular.io/guide/providers
